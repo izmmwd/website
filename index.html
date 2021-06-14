@@ -1,172 +1,196 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  <meta charset="utf-8">
-
-  <title>izmmwd</title>
-
-  <link rel="stylesheet" href="/css/izmmwd.css">
-
-</head>
-<body>
-
-  <div class="wrapper">
-
-    <header class="clearfix">
-
-      <h1><a href="/">izmmwd</a></h1>
-      <p>There are only 10 types of people in the world: Those who understand our experiments on data and usability, and those who don't. you do? <a href="mailto:contact@izmmd.de">talk to us!</a></p>
-
-    </header>
-
-    <article id="gelungen-es">
-
-      <a class="clearfix">
-
-        <h2>Gelungenes</h2>
-
-        <figure>
-
-          <img src="/img/p/gelungen-es.png" alt="">
-
-        </figure>
-
-        <dl>
-
-          <dt><abbr title="Deutsche Beschreibung">DE</abbr></dt>
-          <dd>Das Internet ist groß und weit und jemand muss es füllen. Die tollsten Sätze, die uns quer gekommen sind gibt es jetzt auf gelungen.es. Jeden Tag einen.</dd>
-
-          <dt><abbr title="English Description">EN</abbr></dt>
-          <dd>The Internet ist large and wide and somebody has to fill it. The best sentences we found are now available on gelungen.es. Every day a new one.</dd>
-
-        </dl>
-
-      </a>
-
-    </article>
-
-    <article id="ich-war-noch-niemals-in">
-
-      <a class="clearfix">
-
-        <h2>ich war noch niemals in …</h2>
-
-        <figure>
-
-          <img src="/img/p/ich-war-noch-niemals-in.png" alt="">
-
-        </figure>
-
-        <dl>
-
-          <dt><abbr title="Deutsche Beschreibung">DE</abbr></dt>
-          <dd>ich-war-noch-niemals.in verbindet Angebote aus Affiliate-Netzwerken mit sozialen und Geodaten zu einem inspirierenden Erlebnis bei der nächsten Urlaubssuche.</dd>
-
-          <dt><abbr title="English Description">EN</abbr></dt>
-          <dd>ich-war-noch-niemals.in combines affiliate, social and geo data in an inspiring holiday web page.</dd>
-
-        </dl>
-
-      </a>
-
-    </article>
-
-    <article id="how-far-can-i-travel">
-
-      <a class="clearfix">
-
-        <h2>how far can i travel</h2>
-
-        <figure>
-
-          <img src="/img/p/how-far-can-i-travel.png" alt="">
-
-        </figure>
-
-        <dl>
-
-          <dt><abbr title="Deutsche Beschreibung">DE</abbr></dt>
-          <dd>how-far-can-i-travel.com berechnet wie weit man in einer gegebenen Zeit mit gewählten Verkehrsmitteln gelangt und stellt diese Daten als Karte und Geodaten zur Verfügung.</dd>
-
-          <dt><abbr title="English Description">EN</abbr></dt>
-          <dd>how-far-can-i-travel.com calculates how far you can go within a given time and a chosen transport system. it shows the result on a map and offers raw geodata via an api.</dd>
-
-        </dl>
-
-      </a>
-
-    </article>
-
-    <article id="interfew">
-
-      <a class="clearfix">
-
-        <h2>interfew</h2>
-
-        <figure>
-
-          <img src="/img/p/interfew.png" alt="">
-
-        </figure>
-
-        <dl>
-
-          <dt><abbr title="Deutsche Beschreibung">DE</abbr></dt>
-          <dd>interfew ist ein Aggregator für Interviews aus dem Netz.</dd>
-
-          <dt><abbr title="English Description">EN</abbr></dt>
-          <dd>interfew aggregates german interviews from over 60 sources, identifies people and tags and shows them topic-, place-, person- or organisation-sorted.</dd>
-
-        </dl>
-
-      </a>
-
-    </article>
-
-    <article id="reizwortgenerator">
-
-      <a class="clearfix">
-
-        <h2>Reizwortgenerator</h2>
-
-        <figure>
-
-          <img src="/img/p/reizwortgenerator.png" alt="">
-
-        </figure>
-
-        <dl>
-
-          <dt><abbr title="Deutsche Beschreibung">DE</abbr></dt>
-          <dd>Der Reizwortgenerator nimmt die Überschriften der verschiedenen Quellen, entfernt die Stoppwörter und bietet sie dir wieder an für deine eigene Geschichte.</dd>
-
-          <dt><abbr title="English Description">EN</abbr></dt>
-          <dd>Reizwortgenerator takes the words out of actual newspaper-headlines, removes stopwords and offers them for a new story.</dd>
-
-        </dl>
-
-      </a>
-
-    </article>
-
-  </div>
-
-  <footer>
-
-    <div class="wrapper clearfix">
-
-      <div id="colophon">
-
-        <p>izmmwd sind <a href="https://www.linkedin.com/in/guenterleyherr/">Günter Leyherr</a> und <a href="mailto:stefan@izmmwd.de">Stefan von Süßkind</a>.</p>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free@5.15.3/css/all.min.css"
+    />
+
+    <title>izmmwd</title>
+  </head>
+  <body style="padding: 1rem;">
+    <div id="app">
+      <div class="container">
+        <h1 class="title has-text-centered">izmmwd</h1>
+        <p>
+          There are only 10 types of people in the world: Those who understand
+          our experiments on data and usability, and those who don't. you do?
+          <a href="mailto:contact@izmmd.de">talk to us!</a>
+        </p>
+
+
+        <div id="gelungen-es" class="box mt-5">
+          <div class="columns">
+            <div class="column">
+              <h2 class="is-size-3 has-text-weight-semibold">
+                <a href="https://www.gelungen.es" class="has-text-success"
+                  >Gelungenes</a
+                >
+              </h2>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="Deutsche Beschreibung">DE</abbr></small
+                >
+                Das Internet ist groß und weit und jemand muss es füllen. Die
+                tollsten Sätze, die uns quer gekommen sind gibt es jetzt auf
+                gelungen.es. Jeden Tag einen.
+              </p>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="English Description">EN</abbr></small
+                >
+                The Internet ist large and wide and somebody has to fill it. The
+                best sentences we found are now available on gelungen.es. Every
+                day a new one.
+              </p>
+            </div>
+            <div class="column is-two-thirds">
+              <figure class="image">
+                <a href="https://www.gelungen.es"
+                  ><img src="/img/p/gelungen-es.png" alt=""
+                /></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div id="ich-war-noch-niemals-in" class="box mt-5">
+          <div class="columns">
+            <div class="column">
+              <h2 class="is-size-3 has-text-weight-semibold has-text-success">
+                ich war noch niemals in …
+              </h2>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="Deutsche Beschreibung">DE</abbr></small
+                >
+                ich-war-noch-niemals.in verbindet Angebote aus
+                Affiliate-Netzwerken mit sozialen und Geodaten zu einem
+                inspirierenden Erlebnis bei der nächsten Urlaubssuche.
+              </p>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="English Description">EN</abbr></small
+                >
+                ich-war-noch-niemals.in combines affiliate, social and geo data
+                in an inspiring holiday web page.
+              </p>
+            </div>
+            <div class="column is-two-thirds">
+              <figure class="image">
+                <img src="/img/p/ich-war-noch-niemals-in.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div id="how-far-can-i-travel" class="box mt-5">
+          <div class="columns">
+            <div class="column">
+              <h2 class="is-size-3 has-text-weight-semibold has-text-success">
+                how far can i travel
+              </h2>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="Deutsche Beschreibung">DE</abbr></small
+                >
+                how-far-can-i-travel.com berechnet wie weit man in einer
+                gegebenen Zeit mit gewählten Verkehrsmitteln gelangt und stellt
+                diese Daten als Karte und Geodaten zur Verfügung.
+              </p>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="English Description">EN</abbr></small
+                >
+                how-far-can-i-travel.com calculates how far you can go within a
+                given time and a chosen transport system. it shows the result on
+                a map and offers raw geodata via an api.
+              </p>
+            </div>
+            <div class="column is-two-thirds">
+              <figure class="image">
+                <img src="/img/p/how-far-can-i-travel.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div id="interfew" class="box mt-5">
+          <div class="columns">
+            <div class="column">
+              <h2 class="is-size-3 has-text-weight-semibold has-text-success">
+                interfew
+              </h2>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="Deutsche Beschreibung">DE</abbr></small
+                >
+                interfew ist ein Aggregator für Interviews aus dem Netz.
+              </p>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="English Description">EN</abbr></small
+                >
+                interfew aggregates german interviews from over 60 sources,
+                identifies people and tags and shows them topic-, place-,
+                person- or organisation-sorted.
+              </p>
+            </div>
+            <div class="column is-two-thirds">
+              <figure class="image">
+                <img src="/img/p/interfew.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div id="reizwortgenerator" class="box mt-5">
+          <div class="columns">
+            <div class="column">
+              <h2 class="is-size-3 has-text-weight-semibold has-text-success">
+                Reizwortgenerator
+              </h2>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="Deutsche Beschreibung">DE</abbr></small
+                >
+                Der Reizwortgenerator nimmt die Überschriften der verschiedenen
+                Quellen, entfernt die Stoppwörter und bietet sie dir wieder an
+                für deine eigene Geschichte
+              </p>
+
+              <p class="mt-3">
+                <small class="has-text-grey"
+                  ><abbr title="English Description">EN</abbr></small
+                >
+                Reizwortgenerator takes the words out of actual
+                newspaper-headlines, removes stopwords and offers them for a new
+                story.
+              </p>
+            </div>
+            <div class="column is-two-thirds">
+              <figure class="image">
+                <img src="/img/p/reizwortgenerator.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <a href="/impressum.html" id="imprint" class="clearfix">Impressum</a>
-
     </div>
-
-  </footer>
-
-</body>
+  </body>
 </html>
